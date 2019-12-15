@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\TypeuslugiSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Категории услуг');
+//$this->title = Yii::t('app', 'Категории услуг');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="typeuslugi-index">

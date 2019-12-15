@@ -15,7 +15,13 @@ return [
     'modules' => [],
     'components' => [
 
-    
+      'view' => [
+       'theme' => [
+           'pathMap' => [
+              '@app/views' => 'backend/views'
+           ],
+       ],
+  ],
 
 
             'assetManager' => [
