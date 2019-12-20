@@ -1,7 +1,8 @@
 <?php
 use yii\widgets\Breadcrumbs;
 use dmstr\widgets\Alert;
-
+use yii\helpers\Html;
+  use yii\helpers\Url;
 ?>
 <div class="content-wrapper">
     <section class="content-header">
@@ -39,8 +40,9 @@ use dmstr\widgets\Alert;
     <div class="pull-right hidden-xs">
         <b>Version</b> 2.0
     </div>
-    <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-    reserved.
+    <div class="final">  Copyright © <?php echo "2017 - ".date('Y') ?>
+      <?php echo Html::a('На главную страницу сайта', 'http://localhost/',['class' => 'rd-nav-link']); ?>
+  </div>
 </footer>
 
 <!-- Control Sidebar -->

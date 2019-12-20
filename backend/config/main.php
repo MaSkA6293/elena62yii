@@ -26,6 +26,9 @@ return [
 
             'assetManager' => [
                 'bundles' => [
+                  'backend\assets\AdminLteAsset' => [
+                'skin' => 'skin-yellow',
+            ],
                     'yii\web\JqueryAsset' => [
                         'sourcePath' => null,
                         'js' => ['js/core.min.js'] // тут путь до Вашего экземпляра jquery

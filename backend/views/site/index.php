@@ -15,13 +15,9 @@ $this->title = 'Страница админа';
     <div class="jumbotron">
         <h1>Congratulations!</h1>
 
-        
 
 
     </div>
 
-    <div class="body-content">
 
-
-    </div>
 </div>

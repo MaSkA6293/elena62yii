@@ -21,8 +21,7 @@ if (Yii::$app->controller->action->id === 'login') {
     } else {
         app\assets\AppAsset::register($this);
     }
-
-    dmstr\web\AdminLteAsset::register($this);
+      backend\assets\AdminLteAsset::register($this);
 
     $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
     ?>
@@ -30,14 +29,22 @@ if (Yii::$app->controller->action->id === 'login') {
     <!DOCTYPE html>
     <html lang="<?= Yii::$app->language ?>">
     <head>
+      <script src="https://kit.fontawesome.com/75491a64ae.js" crossorigin="anonymous"></script>
         <meta charset="<?= Yii::$app->charset ?>"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?= Html::csrfMetaTags() ?>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
     </head>
-    <body class="hold-transition skin-blue sidebar-mini">
+    <body class="hold-transition <?=   \dmstr\helpers\AdminLteHelper::skinClass() ?> sidebar-mini">
     <?php $this->beginBody() ?>
+
+
+
+
+
+
     <div class="wrapper">
 
         <?= $this->render(
@@ -60,6 +67,7 @@ if (Yii::$app->controller->action->id === 'login') {
 
     <?php $this->endBody() ?>
     </body>
+
     </html>
     <?php $this->endPage() ?>
 <?php } ?>
